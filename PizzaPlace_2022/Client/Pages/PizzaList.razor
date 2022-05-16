@@ -1,5 +1,5 @@
 ﻿
-@if (Items is null || !Items.Any()) {
+@*@if (Items is null || !Items.Any()) {
     <div>Loading...</div>
 }
 else {
@@ -11,4 +11,18 @@ else {
         Selected="@Selected" />
     }
 }
+*@
+
+<!-- New Code for Chapter 4 - Reusable-->
+<ItemList Items="@Items">
+    <Header>
+        <h1>@Title</h1>
+    </Header>
+    <RowTemplate Context="pizza">
+        <PizzaItem Pizza="@pizza"
+            ButtonClass="@ButtonClass"
+            ButtonTitle="@ButtonTitle"
+            Selected="@Selected" />
+    </RowTemplate>
+</ItemList>
 
