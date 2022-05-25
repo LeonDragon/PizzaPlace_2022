@@ -5,9 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace PizzaPlace_2022.Shared {
-    public enum Spiciness {
-        None,
-        Spicy,
-        Hot
+    public interface IOrderService {
+        ValueTask PlaceOrder(ShoppingBasket basket);
     }
 }
