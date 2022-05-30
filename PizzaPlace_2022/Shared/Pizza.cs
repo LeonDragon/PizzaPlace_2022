@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace PizzaPlace_2022.Shared {
     public class Pizza {
-        public Pizza(int id, string name, decimal price,
-        Spiciness spiciness) {
+        public Pizza(int id, string name, decimal price, Spiciness spiciness) {
             this.Id = id;
             this.Name = name;
             this.Price = price;
