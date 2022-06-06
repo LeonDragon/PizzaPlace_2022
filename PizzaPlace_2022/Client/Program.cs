@@ -14,6 +14,6 @@ builder.Services.AddScoped(sp => new HttpClient
 builder.Services
     .AddTransient<IMenuService, MenuService>();
 builder.Services
-    .AddTransient<IOrderService, ConsoleOrderService>();
+    .AddTransient<IOrderService, OrderService>();
 
 await builder.Build().RunAsync();
